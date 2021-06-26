@@ -8,7 +8,7 @@ contract Owned {
         owner = msg.sender;
     }
     
-    modifier isOwner() {
+    modifier isOwner {
         require(msg.sender == owner, "Only owner is allowed to do this operation!");
         _;
     }
